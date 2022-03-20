@@ -85,8 +85,8 @@ public abstract class Livro {
 	public float getAvaliacao() {
 		return avaliacao/quantidadeDeVotos;
 	}
-	public void setAvaliacao(float avaliação) {
-		this.avaliacao += avaliação;
+	public void setAvaliacao(float avaliacao) {
+		this.avaliacao += avaliacao;
 		this.quantidadeDeVotos +=1;
 	}
 	public String getGenero() {

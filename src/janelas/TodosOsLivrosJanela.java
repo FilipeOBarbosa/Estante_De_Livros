@@ -20,7 +20,7 @@ public class TodosOsLivrosJanela extends ClasseMenu{
 	private ArrayList<Livro> livrosEmOrdem2 = new ArrayList<Livro>();
 	private DefaultTableModel modeloEstante;
 	private String alf = "Alfabetica";
-	private String avali = "Avaliação";
+	private String avali = "Avaliacao";
 	private boolean f = true;
 	private JButton filtrar;
 	public TodosOsLivrosJanela(Conta logado, CentralDeInformacoes c, Persistencia p) {
@@ -30,7 +30,7 @@ public class TodosOsLivrosJanela extends ClasseMenu{
 		livrosEmOrdem2.addAll(c.getTodosOsLivros());
 		criarJLabel("TODOS OS LIVROS", 330, 30, 250, 100,20);
 		criarJLabel("Filtragem:", 520, 85, 150, 20,12);
-		filtrar = criarBotao("Filtrar:Alfabetica, Avaliação",580, 85, 200, 20,"#169BD5","#FFFFFF", "#169BD5", 5);
+		filtrar = criarBotao("Filtrar:Alfabetica, Avaliacao",580, 85, 200, 20,"#169BD5","#FFFFFF", "#169BD5", 5);
 		modeloEstante = geradorDeTableModel();
 		geradorDeTabela(getC().getTodosOsLivros(), 200,110,550,440);
 		ouvinteFiltro();
